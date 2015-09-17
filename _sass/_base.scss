@@ -1,0 +1,27 @@
+html {
+   overflow-y: scroll;
+   font-size: 100%; /* Sets up the Base 10 stuff */
+    -ms-text-size-adjust: 100%; /* 2 */
+ -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+   font-family: $base-font-family;
+   @include font-size(16px);
+   color:$grey-color;
+}
+
+p {text-align:justify;}
+
+a {
+   color:$primary-color;
+   &:hover, &:active, &:focus {
+     color:$primary-color;
+     text-decoration:none;
+     }
+}
+
+
+
+
+section {padding: 6.250em 0 6.250em 0;}

@@ -1,0 +1,229 @@
+.topbar {
+  padding:1em 0;
+  background-color:$grey-color-light;
+  .td-logo {
+    width:160px;
+  }
+}
+
+
+.hero {
+  .hero-title {
+    margin:0;
+    @include font-size(56px);
+    color:$grey-color;
+    font-weight:300;
+    font-style: italic;
+    &:before{
+      content:'3';
+      display:inline-block;
+      line-height:normal;
+      width:1.429em;
+      height:1.429em;
+      margin-right:0.179em;
+      color:$grey-color;
+      border:0.054em solid $grey-color;
+      -moz-border-radius: 3.125em;
+      -webkit-border-radius: 3.125em;
+      border-radius:3.125em;
+    }
+  }
+
+  .hero-subtitle {
+    margin:0;
+    @include font-size(56px);
+    color:$grey-color-light;
+    font-weight:300;
+    font-style: italic;
+  }
+}
+
+.adn-bu {
+  padding-bottom:0;
+  .bu {
+    padding:0 1.875em 6.250em 1.875em;
+  }
+  .bu-circle {
+    display: block;
+    position: relative;
+    background-color: transparent;
+    text-align: center;
+
+    &:after {
+      display: block;
+      padding-bottom: 100%;
+      width: 100%;
+      height: 0;
+      border:4px solid;
+      border-radius: 50%;
+      background-color: #ffffff;
+      content: "";
+    }
+    .bu-circle-inner {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .bu-circle-wrapper {
+        display: table;
+        width: 100%;
+        height: 100%;
+        .bu-circle-content {
+          display: table-cell;
+          padding: 1em;
+          vertical-align: middle;
+          overflow: hidden;
+        }
+      }
+    }
+    .bu-img{margin:auto;}
+  }
+
+  .circle-mcs img {width:258px;}
+  .circle-tdnext img {width:233px;}
+  .circle-vitalbase img {width:322px;}
+
+  .circle-mcs:after {border-color:$mcs-color;}
+  .circle-tdnext:after{border-color:$tdnext-color;}
+  .circle-vitalbase:after{border-color:$vitalbase-color;}
+
+  .bu-header {
+    margin-top:2.083em;
+    @include font-size(48px);
+    font-weight:300;
+  }
+
+  .bu-subheader {
+    margin:3.333em 0 3.333em 0;
+    @include font-size(24px);
+    font-weight:300;
+    font-style:italic;
+  }
+}
+
+@media (min-width:992px){
+  .adn-bu{
+    background:url('https://s3-eu-west-1.amazonaws.com/assetstelecomdesign/img/adn-bu.png') no-repeat center top;
+  }
+}
+
+.about {
+  background-color:$grey-color-light;
+  font-weight:300;
+  .about-title {
+    @include font-size(30px);
+    font-weight:300;
+  }
+  .about-description, address {
+    @include font-size(20px);
+    color:#f2f3f3;
+  }
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 0.375em 0.750em;
+  margin-bottom: 0;
+
+  border:1px solid transparent;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius:10px;
+
+  background-image: none;
+  background-color:transparent;
+
+  @include font-size(14px);
+  font-weight: 500;
+  line-height: 0.875em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  -webkit-transition: background 0.4s, color 0.4s;
+  -moz-transition: background 0.4s, color 0.4s;
+  -ms-transition: background 0.4s, color 0.4s;
+  -o-transition: background 0.4s, color 0.4s;
+  transition: background 0.4s, color 0.4s;
+}
+
+.btn-m {
+  padding: 0.556em 0.889em;
+  @include font-size(18px);
+
+}
+
+.btn-l {
+  padding: 0.727em 0.909em;
+  border-width: 0.136em;
+  @include font-size(22px);
+  font-weight:600;
+
+}
+
+.btn-brand {
+  border-color:$primary-color;
+  color:$primary-color;
+  &:hover,&:active, &:focus {
+    background-color:$primary-color;
+    color:#ffffff;
+  }
+}
+
+.btn-mcs {
+  border-color:$mcs-color;
+  color:$mcs-color;
+  &:hover,&:active, &:focus {
+    background-color:$mcs-color;
+    color:#ffffff;
+  }
+}
+
+.btn-tdnext {
+  border-color:$tdnext-color;
+  color:$tdnext-color;
+  &:hover,&:active, &:focus {
+    background-color:$tdnext-color;
+    color:#ffffff;
+  }
+}
+
+.btn-vitalbase {
+  border-color:$vitalbase-color;
+  color:$vitalbase-color;
+  &:hover,&:active, &:focus {
+    background-color:$vitalbase-color;
+    color:#ffffff;
+  }
+}
+
+
+
+footer {
+  padding:1.875em 0 1.875em 0;
+  background-color:$grey-color;
+  color: #ffffff;
+  .nav-footer {
+    margin:0;
+    li {
+      a {
+        color:#ffffff;
+      }
+    }
+  }
+  .copyright {
+    margin:0;
+    @include font-size(20px);
+  }
+}
