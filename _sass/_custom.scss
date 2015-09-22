@@ -81,9 +81,9 @@
     .bu-img{margin:auto;}
   }
 
-  .circle-mcs img {width:258px;}
-  .circle-tdnext img {width:233px;}
-  .circle-vitalbase img {width:322px;}
+  .circle-mcs img {max-width:258px; width:100%;}
+  .circle-tdnext img {max-width:233px; width:100%;}
+  .circle-vitalbase img {max-width:322px; width:100%;}
 
   .circle-mcs:after {border-color:$mcs-color;}
   .circle-tdnext:after{border-color:$tdnext-color;}
